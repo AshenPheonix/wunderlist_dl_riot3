@@ -12,11 +12,12 @@
 
     <script>
         this.done=this.opts.taskdata.done
+        this.id=this.opts.taskdata.id
         edit(e){
             this.watcher.trigger('test')
         }
         finish(e){
-            this.update({done:!this.done})
+            this.watcher.trigger('finishTask',this.id)
         }
         
     </script>

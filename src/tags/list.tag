@@ -6,10 +6,7 @@
     </h1>
 
     <script>
-        this.on('mount',()=>{
-            console.log(this.opts.tasks)
-            this.update()
-        })
+        
     </script>
     
     <style>
